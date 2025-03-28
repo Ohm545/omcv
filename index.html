@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .active {
+            display: block; 
+        }
+        .hidden {
+            display: none; 
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #AAB99A;
+            color: #2d3436;
+        }
+
+        .navbar {
+            background-color: #727D73;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .general {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+
+        .text {
+            flex: 1;
+            text-align: left;
+            max-width: 500px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
+        }
+
+        .content {
+            text-align: center;
+            margin: 40px 20px;
+            padding: 20px;
+            background-color: #99BC85;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px #EE4266(40, 108, 153, 0.47);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul {
+            text-align: left;
+            max-width: 700px;
+            margin: auto;
+            list-style-type: "✅ ";
+        }
+
+        .contact-info {
+            font-size: 18px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            color: #0073e6;
+        }
+        .typewriter {
+            font-size: 24px;
+            border-right: 3px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            padding-right: 5px;
+            font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .general {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .image {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a onclick="showSection('about')" href="#about">About Me</a>
+        <a onclick="showSection('achievements')" href="#achievements">My Achievements</a>
+        <a onclick="showSection('projects')" href="#projects">My Projects</a>
+        <a onclick="showSection('contact')" href="#contact">Contact Me</a>
+    </div>
+
+    <div class="general active" id="myself">
+        <div class="text">
+            <h1 class="typewriter">Hi, I am Ohm Patel</h1>
+        </div>
+        <img src="./WhatsApp Image 2025-03-21 at 06.11.22.jpeg" alt="Myself" class="image">
+    </div>
+
+    <div class="content hidden" id="about">
+        <h2>About Me</h2>
+        <p>
+"Passionate IT Student | Full-Stack Developer | Competitive Programming Enthusiast"<br>
+
+Hey, I'm Ohm, a dedicated IT student and full-stack developer with a passion for problem-solving, AI, and competitive programming.I love building impactful projects, optimizing systems, and exploring new technologies.<br>
+
+Education:<br>
+🎓 Bachelor of Technology (B.Tech) in Information Technology<br>
+📍 Faculty Of Technology, Dharmsinh Desai University (Year of Graduation: 2028)<br>
+
+🏫 High School:<br>
+📍 Knowledge High School, Nadiad, Gujarat Board (Year of Completion: 2024)<br>
+
+Key Skills:<br>
+✅ Full-Stack Development: MERN Stack, Node.js, Express, SQL, Firebase<br>
+✅ Competitive Programming: CodeChef (1-star), 100+ problems solved<br>
+✅ Hackathons & Projects: Built hospital management & grievance portal systems<br>
+
+I believe in continuous learning, solving real-world challenges, and building software that makes a difference.<br>
+    </p>
+    </div>
+
+    <div class="content hidden" id="achievements">
+        <h2>My Achievements</h2>
+        <ul>
+            <li>🥇 Participated in Smart Gujarat Hackathon</li>
+            <li>🏆 Top 2500 Rank - CodeChef Div 4 Contest (1312 Rating)</li>
+            <li>📜 50-Day Streak on CodeChef & Solved 100+ Problems</li>
+            <li>🚀 Developed an AI-Powered Hospital Management System</li>
+            <li>💡 Built "Grievance Express" - A Government Complaint Portal</li>
+            <li>🎓 Completed Full-Stack Web Development & AI Fundamentals</li>
+        </ul>
+    </div>
+    <div class="content hidden" id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <strong>📌 Portfolio Website</strong> - A personal CV website showcasing my achievements.
+                <a href="YOUR_PORTFOLIO_LINK" target="_blank">🔗 View Project</a>
+            </li>
+            <li>
+                <strong>🎬 Netflix Clone</strong> - A UI clone of Netflix built using HTML, CSS, and JavaScript.
+                <a href="https://github.com/Ohm545/Netflix-Clone" target="_blank">🔗 View Project</a>
+            </li>
+            <li>
+                <strong>🎲 Dice Game</strong> - A fun dice-rolling game built with JavaScript.
+                <a href="https://github.com/Ohm545/My-Dice-Game" target="_blank">🔗 Play Now</a>
+            </li>
+            <li>
+                <strong>🏥 MedeQueue</strong> - An AI-powered hospital appointment management system.
+                <br>🤝 Team Project- Collaborated with a team to build an efficient queue management system.
+                <a href="https://github.com/Ohm545/Aspirants1" target="_blank">🔗 View Project</a>
+            </li>
+            <li>
+                <strong>⚖️ Grievance Express</strong> - A government complaint redressal system.
+                <br>🤝 Team Project - Developed as part of a team for streamlining public grievance resolution.
+                <a href="https://github.com/Ohm545/SGH" target="_blank">🔗 View Project</a>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <div class="content hidden" id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-info">
+            📧 Email: <a href="mailto:ohmpatel@example.com">ohmpatel655@gmail.com</a> <br>
+            📞Mobile:+919773497839<br>
+            📍 Location: Anand, Gujarat, India
+        </p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ohm-patel-888a60337/" target="_blank"><img src="./linkedin.png" width="40px"></a> 
+             <a href="https://github.com/Ohm545" target="_blank"><img src="./github.png" width="40px"></a> 
+             <a href="https://www.codechef.com/users/ohm_1106_patel" target="_blank"><img src="./icons8-codechef-48.png" width="40px"></a>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+            sections.forEach(section => section.classList.add('hidden'));
+            let activeSection = document.getElementById(sectionId);
+            activeSection.classList.remove('hidden');
+            activeSection.classList.add('active');
+        }
+    const text = "Hi, I am Ohm Patel";
+    let index = 0;
+    let isDeleting = false;
+    const typingSpeed = 150; 
+    const erasingSpeed = 100; 
+    const delayBetweenLoops = 1000; 
+    const typewriterElement = document.querySelector(".typewriter");
+
+    function typeWriter() {
+        if (!isDeleting) {
+            typewriterElement.textContent = text.substring(0, index + 1);
+            index++;
+        } else {
+            typewriterElement.textContent = text.substring(0, index - 1);
+            index--;
+        }
+
+        if (!isDeleting && index === text.length) {
+            setTimeout(() => isDeleting = true, delayBetweenLoops);
+        } else if (isDeleting && index === 0) {
+            isDeleting = false;
+        }
+
+
+        setTimeout(typeWriter, isDeleting ? erasingSpeed : typingSpeed);
+    }
+
+    document.addEventListener("DOMContentLoaded", typeWriter);
+    </script>
+</body>
+</html>
